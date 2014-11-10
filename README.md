@@ -1,2 +1,2 @@
 # dvdln.com
-> Website of David Lane, web application developer
+> David Lane makes things on the intenet that does stuff.
