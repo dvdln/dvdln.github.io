@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///webpack:///src/main.css"],"names":[],"mappings":"AAAA,WACE,uBACA,cAAgB","file":"styles.css","sourcesContent":[":root, html {\n  font-family: sans-serif;\n  font-size: 16px;\n}\n\n\n\n// WEBPACK FOOTER //\n// webpack:///src/main.css"],"sourceRoot":""}
