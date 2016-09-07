@@ -2,19 +2,15 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const src = __dirname + '/src';
-const dest = __dirname + '/docs';
-
 module.exports = {
   devtool: '#source-map',
-  debug: true,
-  cache: true,
   entry: {
-    app: `${src}/main.js`
+    app: './src/main.js'
   },
   output: {
     filename: '[name].js?[hash]',
-    path: `${dest}/`
+    path: `${__dirname}/docs/`,
+    publicPath: '/docs/'
   },
   plugins: [
     new ExtractTextPlugin('styles.css'),
@@ -46,7 +42,6 @@ module.exports = {
     ]
   },
   devServer: {
-    historyApiFallback: true,
     port: 8080
   }
 };
