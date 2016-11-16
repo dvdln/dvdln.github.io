@@ -31,8 +31,8 @@ module.exports = {
       {
         test: /\.js$/,
         loaders: [
-          'ng-annotate',
-          'babel'
+          'ng-annotate-loader',
+          'babel-loader'
             + '?presets[]=es2015'
             + '&presets[]=stage-2'
             + '&cacheDirectory'
