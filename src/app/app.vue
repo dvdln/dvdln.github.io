@@ -3,7 +3,7 @@
 <template>
   <div>
     <h1>David Lane</h1>
-    <div>Developer; I make stuff with things</div>
+    <div>I use things to make stuff</div>
   </div>
 </template>
 
