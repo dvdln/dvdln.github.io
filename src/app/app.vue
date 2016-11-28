@@ -1,15 +1,15 @@
+<script>
+  export default {
+    name: 'app'
+  };
+</script>
+
 <template>
   <div>
     <h1>David Lane</h1>
     <div>Developer; I make stuff with things</div>
   </div>
 </template>
-
-<script>
-  export default {
-    name: 'app'
-  };
-</script>
 
 <style>
   @import '~minireset.css';

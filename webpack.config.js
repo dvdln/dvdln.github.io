@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   devtool: '#source-map',
@@ -12,6 +13,7 @@ module.exports = {
     publicPath: '/docs/'
   },
   plugins: [
+    new ExtractTextPlugin('style.css?[contenthash]'),
     new HtmlWebpackPlugin({
       title: 'David Lane',
       template: './src/index.ejs',
@@ -19,20 +21,29 @@ module.exports = {
     })
   ],
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
+        options: {
+          loaders: {
+            css: ExtractTextPlugin.extract({
+              loader: 'css-loader',
+              fallbackLoader: 'vue-style-loader'
+            })
+          }
+        }
       },
       {
         test: /\.js$/,
-        loaders: [
-          'babel-loader'
-            + '?presets[]=es2015'
-            + '&presets[]=stage-2'
-            + '&cacheDirectory'
-        ],
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          presets: [
+            ['es2015', {modules: false }],
+            'stage-2'
+          ]
+        }
       }
     ]
   },
