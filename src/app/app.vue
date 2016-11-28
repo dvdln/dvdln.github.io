@@ -1,8 +1,4 @@
-<script>
-  export default {
-    name: 'app'
-  };
-</script>
+<script src="./app.js"></script>
 
 <template>
   <div>
