@@ -11,7 +11,8 @@
     "start": "webpack-dev-server",
     "test": "npm run lint",
     "build": "webpack -p",
-    "lint": "xo ./src/**/*.js"
+    "lint": "xo ./src/**/*.js",
+    "prepublish": "npm run test && npm run build"
   },
   "devDependencies": {
     "babel-loader": "^6.2.8",
