@@ -23,16 +23,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: {
-          loaders: {
-            css: ExtractTextPlugin.extract({
-              loader: 'css-loader',
-              fallbackLoader: 'vue-style-loader'
-            })
-          }
-        }
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          loader: ['css-loader'],
+          fallbackLoader: 'style-loader'
+        })
       },
       {
         test: /\.js$/,
