@@ -38,15 +38,24 @@
   :root, html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   body {
     padding: 2rem;
   }
 
+  @media only screen and (max-device-width : 480px) {
+    body {
+      padding: 1rem;
+    }
+  }
+
   h1 {
     font-size: 2rem;
     font-weight: 800;
+    line-height: 1;
   }
 
   nav {
@@ -66,8 +75,8 @@
   nav li a {
     display: inline-block;
     font-size: 1rem;
-    margin: 0 -1rem;
-    padding: 1rem 1rem 0.5rem;
+    margin: 0 -0.75rem;
+    padding: 1rem 0.75rem 0.5rem;
     color: currentColor;
     text-decoration: none;
   }
@@ -77,6 +86,6 @@
   }
 
   main {
-    margin: 4rem 0;
+    margin: 3rem 0;
   }
 </style>
