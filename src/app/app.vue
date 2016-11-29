@@ -44,10 +44,6 @@
     padding: 2rem;
   }
 
-  #page {
-    max-width: 640px;
-  }
-
   h1 {
     font-size: 2rem;
     font-weight: 800;
@@ -69,6 +65,7 @@
 
   nav li a {
     display: inline-block;
+    font-size: 1rem;
     margin: 0 -1rem;
     padding: 1rem 1rem 0.5rem;
     color: currentColor;
