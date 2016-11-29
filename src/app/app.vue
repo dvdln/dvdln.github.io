@@ -54,26 +54,32 @@
   }
 
   nav {
-    margin: 1.5rem 0;
+    margin: 1rem 0;
+    border: 0px solid lightgray;
+    border-top-width: 1px;
   }
 
   nav li {
     display: inline-block;
-    margin: 0 1.5rem 0 0;
-    color: rebeccapurple;
+    margin: 0 1.5rem -3px 0;
+    color: currentColor;
     border: 0px solid transparent;
-    border-bottom-width: 2px;
+    border-bottom-width: 3px;
   }
 
   nav li a {
     display: inline-block;
-    margin: 0 -0.75rem;
-    padding: 0.5rem 0.75rem;
+    margin: 0 -1rem;
+    padding: 1rem 1rem 0.5rem;
     color: currentColor;
     text-decoration: none;
   }
 
   nav li.router-link-active {
     border-bottom-color: currentColor;
+  }
+
+  main {
+    margin: 4rem 0;
   }
 </style>
