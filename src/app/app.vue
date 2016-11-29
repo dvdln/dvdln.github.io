@@ -1,11 +1,15 @@
-<script src="./app.js"></script>
-
 <template>
   <div>
     <h1>David Lane</h1>
     <div>I use things to make stuff</div>
   </div>
 </template>
+
+<script>
+  export default {
+    name: 'app'
+  };
+</script>
 
 <style>
   @import '~minireset.css';
