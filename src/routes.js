@@ -23,5 +23,9 @@ export default [
     nav: {
       text: 'Resumé'
     }
+  },
+  {
+    path: '/*',
+    redirect: '/about'
   }
 ];
