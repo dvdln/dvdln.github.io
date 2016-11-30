@@ -40,6 +40,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    -webkit-text-size-adjust: none;
   }
 
   body {
@@ -50,7 +51,6 @@
   @media only screen and (max-width : 480px) {
     body {
       padding: 1rem;
-      -webkit-text-size-adjust: none;
     }
   }
 
