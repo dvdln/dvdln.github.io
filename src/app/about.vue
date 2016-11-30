@@ -3,5 +3,7 @@
 </script>
 
 <template>
-  <p>This site will be a little more impressive when I add content.</p>
+  <p>
+    I'm a web developer in Orlando, Florida.
+  </p>
 </template>

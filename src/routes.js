@@ -1,6 +1,5 @@
 import About from './app/about.vue';
 import Examples from './app/examples.vue';
-import Resume from './app/resume.vue';
 
 export default [
   {
@@ -15,13 +14,6 @@ export default [
     component: Examples,
     nav: {
       text: 'My Work'
-    }
-  },
-  {
-    path: '/resume',
-    component: Resume,
-    nav: {
-      text: 'Resumé'
     }
   },
   {

@@ -13,7 +13,7 @@
   <div id="page">
     <header>
       <h1>David Lane</h1>
-      <p>I use things to make stuff</p>
+      <p>Developer: I use things to make stuff</p>
     </header>
 
     <nav>
@@ -93,5 +93,10 @@
 
   main {
     margin: 3rem 0;
+  }
+
+  main a {
+    color: currentColor;
+    font-weight: 800;
   }
 </style>
