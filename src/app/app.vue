@@ -49,6 +49,7 @@
   @media only screen and (max-device-width : 480px) {
     body {
       padding: 1rem;
+      -webkit-text-size-adjust: none;
     }
   }
 
@@ -62,21 +63,21 @@
     margin: 1rem 0;
     border: 0px solid lightgray;
     border-top-width: 1px;
+    line-height: 1;
   }
 
   nav li {
     display: inline-block;
-    margin: 0 1.5rem -3px 0;
+    margin: 0 1rem -3px 0;
     color: currentColor;
     border: 0px solid transparent;
     border-bottom-width: 3px;
   }
 
   nav li a {
+    padding: 1rem 0.5rem;
+    margin: 0 -0.5rem;
     display: inline-block;
-    font-size: 1rem;
-    margin: 0 -0.75rem;
-    padding: 1rem 0.75rem 0.5rem;
     color: currentColor;
     text-decoration: none;
   }
