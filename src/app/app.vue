@@ -13,7 +13,7 @@
   <div id="page">
     <header>
       <h1>David Lane</h1>
-      <div>Developer: I use things to make stuff</div>
+      <div>I use things to make stuff</div>
     </header>
 
     <nav>
