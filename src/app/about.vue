@@ -4,6 +4,6 @@
 
 <template>
   <p>
-    I'm a web developer in Orlando, Florida.
+    I'm a software developer in the Orlando area with a passion for learning new technology and creating innovative applications, primarily for the web.
   </p>
 </template>
