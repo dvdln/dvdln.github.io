@@ -32,8 +32,8 @@
   </div>
 </template>
 
-<style lang="sass">
-  @import '~minireset.css/minireset.sass';
+<style>
+  @import '~minireset.css';
 
   :root, html {
     font-family: 'Open Sans', sans-serif;
@@ -45,24 +45,19 @@
   body {
     padding: 2rem;
     text-align: center;
+  }
 
-    #page {
-      margin: 0 auto;
-      max-width: 1024px;
-      text-align: left;
+  @media only screen and (max-width : 480px) {
+    body {
+      padding: 1rem;
+      -webkit-text-size-adjust: none;
     }
+  }
 
-    @media only screen and (max-width : 480px) {
-      & {
-        padding: 1rem;
-        -webkit-text-size-adjust: none;
-      }
-    }
-
-    a {
-      color: currentColor;
-      font-weight: 700;
-    }
+  #page {
+    margin: 0 auto;
+    max-width: 1024px;
+    text-align: left;
   }
 
   .wf-loading header {
@@ -76,35 +71,37 @@
     line-height: 1;
   }
 
-  $navMargin: 1rem;
-  $navBetween: 1rem;
-  $navUnderlineWidth: 3px;
-
   nav {
-    margin: $navMargin 0;
-    border: 0px solid lightgray;
+    margin: 1rem 0;
+    border: 0 solid lightgray;
     border-top-width: 1px;
-    line-height: 1;
+  }
 
-    li {
-      display: inline-block;
-      margin: 0 $navBetween (-$navUnderlineWidth) 0;
-      color: currentColor;
-      border: 0px solid transparent;
-      border-bottom-width: $navUnderlineWidth;
+  nav li {
+    display: inline-block;
+    margin: 0 1rem 0 0;
+    border: 0 solid transparent;
+    border-bottom-width: 3px;
+  }
 
-      &.router-link-active {
-        border-bottom-color: currentColor;
-      }
+  nav li a {
+    display: inline-block;
+    margin: 0 -0.5rem;
+    padding: 0 0.5rem;
+    line-height: 3;
+    text-decoration: none;
+  }
 
-      a {
-        padding: $navMargin ($navBetween / 2);
-        margin: 0 (-$navBetween / 2);
-        display: inline-block;
-        color: currentColor;
-        font-weight: 400;
-        text-decoration: none;
-      }
-    }
+  nav li.router-link-active {
+    border-color: currentColor;
+  }
+
+  main {
+    margin: 2rem 0;
+  }
+
+  a {
+    color: currentColor;
+    font-weight: 700;
   }
 </style>
