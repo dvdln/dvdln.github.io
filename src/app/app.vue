@@ -13,7 +13,7 @@
   <div id="page">
     <header>
       <h1>David Lane</h1>
-      <p>Developer: I use things to make stuff</p>
+      <div>Developer: I use things to make stuff</div>
     </header>
 
     <nav>
@@ -56,12 +56,12 @@
 
   #page {
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 800px;
     text-align: left;
   }
 
   .wf-loading header {
-    color: white;
+    color: transparent;
   }
 
   header h1 {
@@ -84,16 +84,16 @@
     border-bottom-width: 3px;
   }
 
+  nav li.router-link-active {
+    border-color: currentColor;
+  }
+
   nav li a {
     display: inline-block;
     margin: 0 -0.5rem;
     padding: 0 0.5rem;
     line-height: 3;
     text-decoration: none;
-  }
-
-  nav li.router-link-active {
-    border-color: currentColor;
   }
 
   main {
