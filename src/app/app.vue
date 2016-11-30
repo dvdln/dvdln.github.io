@@ -10,16 +10,16 @@
 </script>
 
 <template>
-  <div id="page">
+  <div class="page wf-hide">
     <header>
-      <h1>David Lane</h1>
+      <h1 class="site-title">David Lane</h1>
       <div>I use things to make stuff</div>
     </header>
 
     <app-navigation></app-navigation>
 
-    <main>
-      <transition name="fade">
+    <main class="page-content">
+      <transition name="crossfade">
         <router-view></router-view>
       </transition>
     </main>
@@ -37,52 +37,60 @@
     -webkit-text-size-adjust: none;
   }
 
-  .fade-enter-active, .fade-leave-active {
-    transition: opacity 0.2s;
-  }
-
-  .fade-enter, .fade-leave-active {
-    opacity: 0
-  }
-
-  .fade-enter-active {
-    transition-delay: 0.2s;
-  }
-
   body {
+    margin: 0;
     padding: 2rem;
     text-align: center;
   }
 
   @media only screen and (max-width : 480px) {
-    body {
-      padding: 1rem;
-    }
+    :root, html { font-size: 16px; }
+    body        { padding: 1rem;   }
   }
 
-  #page {
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: left;
+  @media only screen and (min-width : 1440px) {
+    :root, html { font-size: 20px; }
+    body        { padding: 3rem;   }
   }
 
-  .wf-loading header {
-    color: transparent;
+  .crossfade-enter-active, .crossfade-leave-active {
+    transition: opacity 0.2s;
   }
 
-  header h1 {
+  .crossfade-enter, .crossfade-leave-active {
+    opacity: 0
+  }
+
+  .crossfade-leave-active {
+    position: absolute;
+  }
+
+  .wf-loading .wf-hide {
+    color: transparent !important;
+  }
+
+  a {
+    color: currentColor;
+    font-weight: 700;
+  }
+</style>
+
+<style scoped>
+  .site-title {
     font-family: 'Neuton', serif;
     font-size: 2.5rem;
     font-weight: 800;
     line-height: 1;
   }
 
-  main {
-    margin: 2rem 0;
+  .page {
+    position: relative;
+    margin: 0 auto;
+    max-width: 48rem;
+    text-align: left;
   }
 
-  a {
-    color: currentColor;
-    font-weight: 700;
+  .page-content {
+    margin: 2rem 0;
   }
 </style>
