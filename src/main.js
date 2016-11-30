@@ -6,7 +6,10 @@ import routes from './routes';
 
 webfont.load({
   google: {
-    families: ['Open Sans:300,400,800']
+    families: [
+      'Open Sans:400',
+      'Neuton:800'
+    ]
   }
 });
 

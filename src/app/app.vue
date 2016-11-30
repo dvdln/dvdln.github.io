@@ -13,7 +13,7 @@
   <div id="page">
     <header>
       <h1>David Lane</h1>
-      <div>I use things to make stuff</div>
+      <p>I use things to make stuff</p>
     </header>
 
     <nav>
@@ -53,8 +53,13 @@
     }
   }
 
-  h1 {
-    font-size: 2rem;
+  .wf-loading header {
+    color: white;
+  }
+
+  header h1 {
+    font-family: 'Neuton', serif;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1;
   }
