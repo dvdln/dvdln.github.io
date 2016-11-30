@@ -44,9 +44,16 @@
 
   body {
     padding: 2rem;
+    text-align: center;
   }
 
-  @media only screen and (max-device-width : 480px) {
+  #page {
+    margin: 0 auto;
+    max-width: 1024px;
+    text-align: left;
+  }
+
+  @media only screen and (max-width : 480px) {
     body {
       padding: 1rem;
       -webkit-text-size-adjust: none;
