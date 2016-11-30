@@ -27,7 +27,9 @@
     </nav>
 
     <main>
-      <router-view></router-view>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
     </main>
   </div>
 </template>
@@ -41,6 +43,18 @@
     font-size: 18px;
     line-height: 1.5;
     -webkit-text-size-adjust: none;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 0.2s;
+  }
+
+  .fade-enter, .fade-leave-active {
+    opacity: 0
+  }
+
+  .fade-enter-active {
+    transition-delay: 0.2s;
   }
 
   body {
@@ -82,6 +96,7 @@
     margin: 0 1rem 0 0;
     border: 0 solid transparent;
     border-bottom-width: 3px;
+    transition: border-color 0.2s;
   }
 
   nav li.router-link-active {
