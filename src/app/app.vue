@@ -32,8 +32,8 @@
   </div>
 </template>
 
-<style>
-  @import '~minireset.css';
+<style lang="sass">
+  @import '~minireset.css/minireset.sass';
 
   :root, html {
     font-family: 'Open Sans', sans-serif;
@@ -45,18 +45,23 @@
   body {
     padding: 2rem;
     text-align: center;
-  }
 
-  #page {
-    margin: 0 auto;
-    max-width: 1024px;
-    text-align: left;
-  }
+    #page {
+      margin: 0 auto;
+      max-width: 1024px;
+      text-align: left;
+    }
 
-  @media only screen and (max-width : 480px) {
-    body {
-      padding: 1rem;
-      -webkit-text-size-adjust: none;
+    @media only screen and (max-width : 480px) {
+      & {
+        padding: 1rem;
+        -webkit-text-size-adjust: none;
+      }
+    }
+
+    a {
+      color: currentColor;
+      font-weight: 700;
     }
   }
 
@@ -71,39 +76,35 @@
     line-height: 1;
   }
 
+  $navMargin: 1rem;
+  $navBetween: 1rem;
+  $navUnderlineWidth: 3px;
+
   nav {
-    margin: 1rem 0;
+    margin: $navMargin 0;
     border: 0px solid lightgray;
     border-top-width: 1px;
     line-height: 1;
-  }
 
-  nav li {
-    display: inline-block;
-    margin: 0 1rem -3px 0;
-    color: currentColor;
-    border: 0px solid transparent;
-    border-bottom-width: 3px;
-  }
+    li {
+      display: inline-block;
+      margin: 0 $navBetween (-$navUnderlineWidth) 0;
+      color: currentColor;
+      border: 0px solid transparent;
+      border-bottom-width: $navUnderlineWidth;
 
-  nav li a {
-    padding: 1rem 0.5rem;
-    margin: 0 -0.5rem;
-    display: inline-block;
-    color: currentColor;
-    text-decoration: none;
-  }
+      &.router-link-active {
+        border-bottom-color: currentColor;
+      }
 
-  nav li.router-link-active {
-    border-bottom-color: currentColor;
-  }
-
-  main {
-    margin: 3rem 0;
-  }
-
-  main a {
-    color: currentColor;
-    font-weight: 700;
+      a {
+        padding: $navMargin ($navBetween / 2);
+        margin: 0 (-$navBetween / 2);
+        display: inline-block;
+        color: currentColor;
+        font-weight: 400;
+        text-decoration: none;
+      }
+    }
   }
 </style>
