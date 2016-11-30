@@ -10,25 +10,26 @@
 </script>
 
 <template>
-  <nav>
+  <nav class="navigation">
     <ul>
       <router-link v-for="item in menu"
                    :to="item.path"
-                   tag="li">
-        <a>{{item.nav.text}}</a>
+                   tag="li"
+                   class="menu-item">
+        <a class="menu-item-link">{{item.nav.text}}</a>
       </router-link>
     </ul>
   </nav>
 </template>
 
-<style>
-  nav {
+<style scoped>
+  .navigation {
     margin: 1rem 0;
     border: 0 solid lightgray;
     border-top-width: 1px;
   }
 
-  nav li {
+  .menu-item {
     display: inline-block;
     margin: 0 1rem 0 0;
     border: 0 solid transparent;
@@ -36,11 +37,11 @@
     transition: border-color 0.2s;
   }
 
-  nav li.router-link-active {
+  .menu-item.router-link-active {
     border-color: currentColor;
   }
 
-  nav li a {
+  .menu-item-link {
     display: inline-block;
     margin: 0 -0.5rem;
     padding: 0 0.5rem;
