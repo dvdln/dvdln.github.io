@@ -97,6 +97,6 @@
 
   main a {
     color: currentColor;
-    font-weight: 800;
+    font-weight: 700;
   }
 </style>

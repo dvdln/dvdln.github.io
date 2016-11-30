@@ -7,7 +7,7 @@ import routes from './routes';
 webfont.load({
   google: {
     families: [
-      'Open Sans:400,800',
+      'Open Sans:400,700',
       'Neuton:800'
     ]
   }
