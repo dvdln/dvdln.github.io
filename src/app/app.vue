@@ -39,18 +39,18 @@
 
   body {
     margin: 0;
-    padding: 2rem;
+    padding: 1rem 2rem;
     text-align: center;
   }
 
   @media only screen and (max-width : 480px) {
     :root, html { font-size: 16px; }
-    body        { padding: 1rem;   }
+    body        { padding: 0.5rem 1rem;   }
   }
 
   @media only screen and (min-width : 1440px) {
     :root, html { font-size: 20px; }
-    body        { padding: 3rem;   }
+    body        { padding: 1.5rem 3rem;   }
   }
 
   .crossfade-enter-active, .crossfade-leave-active {
