@@ -40,6 +40,7 @@
   body {
     margin: 0;
     padding: 1rem 2rem;
+    color: #141951;
     text-align: center;
   }
 
