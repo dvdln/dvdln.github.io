@@ -10,9 +10,9 @@
   "scripts": {
     "start": "webpack-dev-server",
     "test": "npm run lint",
-    "build": "webpack -p",
+    "build": "npm test && webpack -p",
     "lint": "xo",
-    "version": "npm run test && npm run build"
+    "version": "npm run build"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
