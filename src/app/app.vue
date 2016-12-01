@@ -54,11 +54,12 @@
   }
 
   .crossfade-enter-active, .crossfade-leave-active {
-    transition: opacity 0.2s;
+    transition: all 0.2s;
   }
 
   .crossfade-enter, .crossfade-leave-active {
-    opacity: 0
+    opacity: 0;
+    transform: translateY(1rem);
   }
 
   .crossfade-leave-active {
@@ -92,5 +93,6 @@
 
   .page-content {
     margin: 2rem 0;
+    position: relative;
   }
 </style>
