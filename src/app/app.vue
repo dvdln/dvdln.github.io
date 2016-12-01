@@ -45,13 +45,13 @@
   }
 
   @media only screen and (max-width : 480px) {
-    :root, html { font-size: 16px; }
-    body        { padding: 0.5rem 1rem;   }
+    :root, html { font-size: 16px;      }
+    body        { padding: 0.5rem 1rem; }
   }
 
   @media only screen and (min-width : 1440px) {
-    :root, html { font-size: 20px; }
-    body        { padding: 1.5rem 3rem;   }
+    :root, html { font-size: 20px;      }
+    body        { padding: 1.5rem 3rem; }
   }
 
   .crossfade-enter-active, .crossfade-leave-active {
