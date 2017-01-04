@@ -29,10 +29,10 @@
 <style>
   @import '~minireset.css';
 
-  :root, html {
+  html {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     -webkit-text-size-adjust: none;
   }
@@ -43,14 +43,13 @@
     text-align: center;
   }
 
-  @media only screen and (max-width : 480px) {
-    :root, html { font-size: 16px;      }
-    body        { padding: 0.5rem 1rem; }
+  @media only screen and (max-width: 480px) {
+    body { padding: 0.5rem 1rem; }
   }
 
-  @media only screen and (min-width : 1440px) {
-    :root, html { font-size: 20px;      }
-    body        { padding: 1.5rem 3rem; }
+  @media only screen and (min-width: 1440px) {
+    html { font-size: 20px;      }
+    body { padding: 1.5rem 3rem; }
   }
 
   .crossfade-enter-active, .crossfade-leave-active {
@@ -87,7 +86,7 @@
   .page {
     position: relative;
     margin: 0 auto;
-    max-width: 48rem;
+    max-width: 42rem;
     text-align: left;
   }
 
